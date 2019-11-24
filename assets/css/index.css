@@ -1,1 +1,65 @@
-body{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;font-size:18px}h1,h2,h3,h4,h5,h6{font-family:'Amatic SC',cursive}.dominicaduque{background-image:url("../img/2019-11-10 21.08.58 2174479171430882837_211054777.jpg");background-size:cover;background-position:top right;background-repeat:no-repeat;height:100vh;display:flex;color:#fff}.dominicaduque .data{margin:0;padding:0;position:relative;top:50%;left:5%}.dominicaduque .data h1{font-size:2.5em}.dominicaduque .data h2{font-size:1.5em}.main{display:inline-block}.reel{position:absolute;top:calc(55% + 150px);height:280px;min-width:280px;right:1em;margin:1em;background-color:#f00}
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Amatic SC', cursive;
+}
+.data {
+  background: rgba(255,255,255,0.1);
+  bottom: 15%;
+  left: 2em;
+  padding: 0 3em;
+  position: absolute;
+}
+.data h2 {
+  font-weight: normal;
+}
+.dominicaduque {
+  background-image: url("../img/2019-11-10 21.08.58 2174479171430882837_211054777.jpg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh;
+}
+.intro {
+  background: #000;
+  height: auto;
+  width: 100%;
+}
+.videos {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 315px;
+  justify-content: center;
+  margin: 0.5em;
+  margin-top: -4em;
+  position: absolute;
+  right: 5%;
+}
+[class^="video--box-"] {
+  margin: 0.5em;
+}
+[class^="video--box-"] iframe {
+  width: auto;
+}
+@media screen and (max-width: 425px) {
+  .dominicaduque {
+    background-image: url("../img/2019-11-06 19.16.02 2171523227793137015_211054777.jpg");
+    background-position: top center;
+    color: #fff;
+  }
+  .dominicaduque .data {
+    background: rgba(0,0,0,0.2);
+    padding-left: 1em;
+  }
+}

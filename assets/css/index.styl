@@ -1,25 +1,23 @@
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Amatic SC', cursive;
+mb2em = 2em
+m1em = 1em
 body
     box-sizing: border-box
     font-family: 'Roboto', sans-serif;
     font-size: 18px
     margin 0
     padding 0
-
 h1, h2, h3, h4, h5, h6
     font-family: 'Amatic SC', cursive;
-
-
 .data
     background rgba(white, .1)
-    bottom 15%
+    bottom 19%
     left 2em
     padding 0 3em
     position absolute
     h2
         font-weight: normal
-
 .dominicaduque
     background-image: url('../img/2019-11-10 21.08.58 2174479171430882837_211054777.jpg')
     background-size cover
@@ -27,24 +25,44 @@ h1, h2, h3, h4, h5, h6
     background-repeat no-repeat
     color #fff
     height 100vh
-
+.gallery
+    display: inline-block
+    text-align: center
+    margin-bottom mb2em
+    img
+        max-width 30%
 .intro
-    background black
-    height auto
-    width 100%
-
-.videos
     display inline-flex
+    justify-content: space-around
+    margin m1em
+    box-sizing border-box
+    .intro--texto
+        max-width 768px
+        box-sizing: content-box
+        h2
+            border-top: 2px solid rgba(#000, .5)
+            padding-top .5em
+.instagram-media
+    margin m1em
+    min-height 200px
+
+.hidden
+    display none
+    
+.videos
+    display flex
     flex-wrap: wrap
-    height 315px
-    justify-content: center
+    min-height 315px
+    justify-content: flex-end
     margin .5em
-    margin-top -4em
-    position absolute
-    right 5%
+    margin-top -7em
+    margin-bottom: mb2em
 [class^="video--box-"]
     margin .5em
     iframe
-        width auto
+        width 560px
+
+.outro
+    margin m1em
 
 @import 'mediaquery'

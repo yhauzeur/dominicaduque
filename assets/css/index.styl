@@ -10,6 +10,9 @@ body
     padding 0
 h1, h2, h3, h4, h5, h6
     font-family: 'Amatic SC', cursive;
+.border--title
+    border-top: 2px solid rgba(#000, .5)
+    padding-top .5em
 .data
     background rgba(white, .1)
     bottom 19%
@@ -39,16 +42,11 @@ h1, h2, h3, h4, h5, h6
     .intro--texto
         max-width 768px
         box-sizing: content-box
-        h2
-            border-top: 2px solid rgba(#000, .5)
-            padding-top .5em
 .instagram-media
     margin m1em
     min-height 200px
-
 .hidden
     display none
-    
 .videos
     display flex
     flex-wrap: wrap
@@ -61,8 +59,9 @@ h1, h2, h3, h4, h5, h6
     margin .5em
     iframe
         width 560px
-
 .outro
     margin m1em
+    // h2
+    //     max-width 425px
 
 @import 'mediaquery'

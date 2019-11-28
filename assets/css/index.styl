@@ -2,6 +2,15 @@
 // font-family: 'Amatic SC', cursive;
 mb2em = 2em
 m1em = 1em
+
+// *::before
+//     content attr(class)
+//     display block
+//     // position relative
+//     background: rgba(yellow, .5)
+//     color red
+//     font-size: .8em
+
 body
     box-sizing: border-box
     font-family: 'Roboto', sans-serif;
@@ -10,24 +19,80 @@ body
     padding 0
 h1, h2, h3, h4, h5, h6
     font-family: 'Amatic SC', cursive;
+
 .border--title
     border-top: 2px solid rgba(#000, .5)
     padding-top .5em
+    display: inline-block
+.border--title-w
+    border-top: 2px solid rgba(#fff, .5)
+    padding-top .5em
+    display: inline-block
 .data
-    background rgba(white, .1)
+    background rgba(black, .5)
     bottom 19%
     left 2em
     padding 0 3em
     position absolute
     h2
         font-weight: normal
+#derechos
+    margin-left: .5em
+    color #797979
+    text-decoration: none
+    margin-top 1em
+    display inline-block
+.description
+    padding-bottom 2em
+    box-sizing: border-box
+    h2
+        margin 1em
+
+.description-medios
+    display: flex
+    flex-direction row
+    justify-content: flex-start
+    overflow-x: auto
+    white-space nowrap
+    margin-bottom: mb2em
+    img
+        display inline
+        margin .5em
+        max-height 150px
+        width 80%
 .dominicaduque
-    background-image: url('../img/2019-11-10 21.08.58 2174479171430882837_211054777.jpg')
+    background-image: url('../img/2019-08-21 21.35.54 2115785890073558093_211054777.jpg')
     background-size cover
     background-position top right
     background-repeat no-repeat
     color #fff
     height 100vh
+    a
+        color #fff
+        text-decoration: none
+.footer
+    background: #1a1a1a
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+    min-height: 150px
+    padding 2em
+    .social
+        margin-bottom: 1em
+    a
+        text-decoration: none
+    p
+        color white
+        font-size: .8em
+    i
+        color white
+        margin .3em
+    .redchain
+        img
+            width 80px
+
 .gallery
     display: inline-block
     text-align: center
@@ -47,6 +112,39 @@ h1, h2, h3, h4, h5, h6
     min-height 200px
 .hidden
     display none
+.menu
+    background rgba(#000, .9)
+    color #fff
+    width 100%
+    height 100vh
+    z-index 1
+    position absolute
+    display none
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    transition: all 2s ease-in-out
+    p
+        width 50%
+        text-align: center
+    a
+        color pink
+#menu:target
+    display flex
+.outro
+    margin m1em
+    margin-bottom 2em
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .outro-box
+        display inline-flex
+        flex-direction row
+        flex-wrap: wrap
+        justify-content: center
+        img
+            margin .5em
+            max-width 200px
 .videos
     display flex
     flex-wrap: wrap
@@ -59,9 +157,5 @@ h1, h2, h3, h4, h5, h6
     margin .5em
     iframe
         width 560px
-.outro
-    margin m1em
-    // h2
-    //     max-width 425px
 
 @import 'mediaquery'
